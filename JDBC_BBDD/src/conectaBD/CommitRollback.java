@@ -13,7 +13,7 @@ public class CommitRollback {
 		try {
 			conexion= DriverManager.getConnection(""
 					+ "jdbc:mysql://localhost/banco", 
-					"banco", "basesdedatos1");
+					"banco", "banco");
 			System.out.println("Conexión correcta");
 			
 			// antes de comenzar a utilizar transacciones 

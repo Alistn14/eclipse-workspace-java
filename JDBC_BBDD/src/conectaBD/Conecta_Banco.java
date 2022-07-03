@@ -13,7 +13,7 @@ public class Conecta_Banco {
 			
 			Connection miConexionBanco = DriverManager.getConnection(""
 					+ "jdbc:mysql://localhost:3306/banco",
-					"banco", "basesdedatos1");
+					"banco", "banco");
 			System.out.println("Esta conectado");
 			
 			// muestra información del tipo de sistema de base de datos (MySQL)

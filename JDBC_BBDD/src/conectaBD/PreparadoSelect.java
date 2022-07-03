@@ -15,7 +15,7 @@ public class PreparadoSelect {
 			Connection conexion =
 					DriverManager.getConnection(""
 							+ "jdbc:mysql://localhost:3306/banco", 
-							"banco", "basesdedatos1");
+							"banco", "banco");
 			System.out.println("Esta conectado con Banco");
 			
 			// se inicializa la instrucción preparada, 
