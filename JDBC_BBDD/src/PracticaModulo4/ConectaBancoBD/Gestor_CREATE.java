@@ -15,7 +15,7 @@ public class Gestor_CREATE {
   Connection conexionbanco = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "banco", "banco");
 				System.out.println("esta conectado\n");
 				
-				//paso 2: Obtención de un objeto de tipo Statement
+				//paso 2: Obtenciï¿½n de un objeto de tipo Statement
 				Statement miStatement=conexionbanco.createStatement();
 				System.out.println("creado statement");
 				
@@ -43,4 +43,4 @@ public class Gestor_CREATE {
 
 
 
-}
+
