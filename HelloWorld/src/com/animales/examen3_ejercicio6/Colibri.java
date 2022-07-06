@@ -12,7 +12,7 @@ public class Colibri extends Animales {
 	private int Alas;
 	private int Pico;
 	
-	//métodos
+	//mï¿½todos
 	public void Volar() {}
 	public void Picotear() {}
 	

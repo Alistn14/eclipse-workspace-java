@@ -1,5 +1,5 @@
 package com.clase.ejercicios;
-//Ejercicios página 413
+//Ejercicios pï¿½gina 413
 
 public class strings {
 
@@ -8,12 +8,12 @@ public class strings {
 //Ejercicio 1: Escribe un programa que dado dos String compruebe si los dos primeros dos caracteres son iguales
 		
 		String texto1 = "Hola";
-		String texto2 = "Adiós";
+		String texto2 = "Adiï¿½s";
 		
 		String substringABC = "klkabcklk";
 		
 
-		String palíndromo = "sometemos";
+		String palÃ­ndromo = "sometemos";
 		String palinReverse= ""; 
 
 		if( texto1.charAt(0) == texto2.charAt(0)) {
@@ -22,7 +22,7 @@ public class strings {
 			System.out.println("Son caracteres iniciales diferentes");
 		} 		
 //Ejercicio 2: Escribe un programa que dado dos String compruebe 
-//si los dos primeros caracteres y los dos últimos son iguales.
+//si los dos primeros caracteres y los dos ï¿½ltimos son iguales.
 		
 		if ( texto1.charAt(texto1.length()-1) == texto2.charAt(texto2.length()-1) &&  texto1.charAt(0) == texto2.charAt(0)) {
 			System.out.println("Los dos primeros caracteres y los dos ultimos son iguales");
@@ -42,8 +42,8 @@ public class strings {
 			System.out.println("No tenemos abc dentro o estan en los extremos");
 		}
 		
-//Ejercicio 4: escribe un programa que dado un String y un determinado índice, 
-//compruebe	que el carácter anterior y el posterior son iguales o no.
+//Ejercicio 4: escribe un programa que dado un String y un determinado ï¿½ndice, 
+//compruebe	que el carï¿½cter anterior y el posterior son iguales o no.
 				
 		    String texto3= "Lorem ipsum dolllor sit amet";
 			int indice = 3; 
@@ -67,8 +67,8 @@ public class strings {
 			}
 				
 //Ejercicio 5: escribe un programa que muestra por pantalla 
-//el índice de la segunda y tercera	ocurrencia del 
-//carácter 'a' en un String dado.
+//el ï¿½ndice de la segunda y tercera	ocurrencia del 
+//carï¿½cter 'a' en un String dado.
 			
 				String ejercicio5 = "zzzabcdef abcdef abcdef dsajdsajk ";
 				
@@ -83,12 +83,12 @@ public class strings {
 				int tercerIndiceEj5 = ejercicio5.indexOf('a', segundoIndiceEj5);
 				System.out.println(tercerIndiceEj5);
 			
-	//Ejercicio 6: Escribe un programa que devuelva si un String es palíndromo 
-	//(se escribe igual hacia delante y hacia detrás).Ejemplo:"sometemos".
+	//Ejercicio 6: Escribe un programa que devuelva si un String es palï¿½ndromo 
+	//(se escribe igual hacia delante y hacia detrï¿½s).Ejemplo:"sometemos".
 	
-	int indiceRecorre = palíndromo.length()-1; //8
+	int indiceRecorre = palÃ­ndromo.length()-1; //8
      System.out.println(indiceRecorre);
-	char caracter= palíndromo.charAt(indiceRecorre); //s
+	char caracter= palÃ­ndromo.charAt(indiceRecorre); //s
 	System.out.println(caracter);
 	
 	for (int i = indiceRecorre; i>=0; i--) {
@@ -96,14 +96,14 @@ public class strings {
 		palinReverse=palinReverse.concat(palinReverse.valueOf(caracter));
 		indiceRecorre --;
 		if(indiceRecorre>=0) {
-			caracter = palíndromo.charAt(indiceRecorre);
+			caracter = palÃ­ndromo.charAt(indiceRecorre);
 		}
 	}
 	System.out.println(palinReverse);
-	if (palíndromo.equals(palinReverse)) {
-		System.out.println("Es un palíndromo");
+	if (palÃ­ndromo.equals(palinReverse)) {
+		System.out.println("Es un palï¿½ndromo");
 	} else {
-		System.out.println("No es un palíndromo");
+		System.out.println("No es un palï¿½ndromo");
 	}
 
 	
@@ -112,8 +112,8 @@ public class strings {
 }
 
 
-	//Ejercicio 4: Escribe un programa dado un String y un determinado índice,
-	//compruebe que el carácter anterior y el posterior son iguales o no.
+	//Ejercicio 4: Escribe un programa dado un String y un determinado indice,
+	//compruebe que el caracter anterior y el posterior son iguales o no.
 
 	String texto3= "Lorem ipsum dolor sit amet";
 	int indice = 3;

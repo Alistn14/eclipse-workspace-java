@@ -13,7 +13,7 @@ public class Delfin extends Animales{
 	private int Aletas;
 	private int Cola;
 	
-	//métodos
+	//mï¿½todos
 	public void Nadar () {}
 	public void Aletear () {}
 	

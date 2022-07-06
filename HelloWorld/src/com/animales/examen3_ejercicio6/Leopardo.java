@@ -12,7 +12,7 @@ public class Leopardo extends Animales{
 	private int Patas;
 	private boolean Pelaje;
 	
-	//métodos
+	//mï¿½todos
 	public void Correr () {}
 	public void Rugir () {}
 	

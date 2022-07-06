@@ -10,7 +10,7 @@ public abstract class Animales implements seresVivos{
 	//constructor
 	
 	
-	//Método
+	//Mï¿½todo
 	public void comer() {
 		
 	}

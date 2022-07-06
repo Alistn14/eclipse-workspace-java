@@ -1,4 +1,4 @@
-package com.banco.ejerciciosProyectoExamen;
+package com.banco;
 
 public class Gestor {
 	
@@ -16,7 +16,7 @@ public class Gestor {
 	private String password;
 	private String correo;
 	
-	//Métodos "getters" y "setters"
+	//Mï¿½todos "getters" y "setters"
 	
 	public int getId() {
 		return id;

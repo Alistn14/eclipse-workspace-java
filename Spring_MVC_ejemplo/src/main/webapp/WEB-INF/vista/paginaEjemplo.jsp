@@ -2,20 +2,25 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Primer ejemplo de MVC con Spring desde Eclipse</title>
-	<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/resources/js/Main.js"></script>
 	<style>
 	   body{background:rgb(25, 255, 17) ;}
 	</style>
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/titular.css">
 </head>
+
 <body>
 		
 <h1>Pagina principal del proyecto de MVC con Spring</h1>
-<a href="http://localhost:8080/spring-demo-mcv/mostrarFormulario">formulario</a>
+
+<a href="mostrarFormulario">formulario</a>
+
 <img src="${pageContext.request.contextPath}/resources/img/cielo.jpg" />
+
 <p style="color:#ff11c7;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -24,7 +29,9 @@ electronic typesetting, remaining essentially unchanged. It was popularised in
 the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
 and more recently with desktop publishing software like Aldus PageMaker including 
 versions of Lorem Ipsum.</p>
+
 <h2 style="color:#ffff00;">Titulo</h2>
+
 <p style="color:#112dff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -36,4 +43,5 @@ versions of Lorem Ipsum.</p>
 
 
 </body>
+
 </html>
