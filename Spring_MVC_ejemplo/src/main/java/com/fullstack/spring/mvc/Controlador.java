@@ -24,11 +24,12 @@ public class Controlador {
 		return "formulario-hola";
 	}*/
 	// http://localhost:8080/spring-demo-mcv/procesarFormulario
-	/*@RequestMapping("/procesarFormulario")
-	public String procesarFormulario(HttpServletRequest request, Model model) {
-	// /WEB-INF/views/hello.jsp
+	//@RequestMapping("/procesarFormulario")
+	//public String procesarFormulario(HttpServletRequest request, Model model) {
+	//WEB-INF/vista/hello.jsp
 		// se extrae el valor del atributo name del campo del formulario formulario
-		String nombre = request.getParameter("nombre");
+		
+	String nombre = request.getParameter("nombre");
 		// si el usuario no ha introducido ningun valor (null), entonces se iguala a una
 		//cadena vacia
 		String mensaje = (nombre == null) ? "undefined" : nombre.toUpperCase();
