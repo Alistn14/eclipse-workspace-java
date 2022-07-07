@@ -4,12 +4,17 @@
 <html>
 
 <head>
+
 	<meta charset="ISO-8859-1">
-	<title>Primer ejemplo de MVC con Spring desde Eclipse</title>
-	<script src="${pageContext.request.contextPath}/resources/js/Main.js"></script>
+	
+	<title> Primer ejemplo de MVC con Spring desde Eclipse </title>
+	
+	<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+	
 	<style>
 	   body{background:rgb(25, 255, 17) ;}
 	</style>
+	
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/titular.css">
 </head>
 
@@ -43,5 +48,4 @@ versions of Lorem Ipsum.</p>
 
 
 </body>
-
 </html>
