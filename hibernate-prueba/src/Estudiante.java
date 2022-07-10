@@ -1,4 +1,5 @@
-// Hibernate recomienda utilizar las librerías de JPA (un estándar) para importar
+package com.fullstack.hibernate;
+// Hibernate recomienda utilizar las librer�as de JPA (un est�ndar) para importar
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,58 +7,44 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-// indica que la clase se convierte en una clase entidad
 @Entity
-
-//indica que realice un mapeo entre esta clase y la tabla estudiante
 @Table(name="estudiante")
-
 public class Estudiante {
-
-//El atributo id será una clave primaria única
-@Id
-
-//autoincremental
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-
-/*
-en este caso (y en los siguientes), el atributo name es redundante porque tiene el
-mismo
-nombre que tendrá la columna de la base de datos
-*/
-
-// id (atributo) --> id (columna en la tabla estudiante)
-
-@Column(name="id")
-private int id;
-
-//nombre (atributo) --> nombre (columna en la tabla estudiante)
-@Column(name="nombre")
-private String nombre;
-
-//apellidos (atributo) --> apellidos (columna en la tabla estudiante)
-@Column(name="apellidos")
-private String apellidos;
-
-//edad (atributo) --> edad (columna en la tabla estudiante)
-@Column(name="edad")
-private int edad ;
-
-//Constructor por defecto
-public Estudiante() {}
-
-//Constructor con los campos
-public Estudiante(String nombre, String apellidos, int edad) {
-	super();
-	this.nombre = nombre;
-	this.apellidos = apellidos;
-	this.edad = edad;
-}
-	@Override
+	// el atributo id ser� una clave primaria �nica
+	@Id
+	// autoincremental
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	/*
+	en este caso (y en los siguientes), el atributo name es redundante 
+	porque tiene el mismo nombre que tendr� la columna de la base de datos
+	*/
+	// id (atributo) --> id (columna en la tabla estudiante)
+	@Column(name="id")
+	private int id;
+	// nombre (atributo) --> nombre (columna en la tabla estudiante)
+	@Column(name="nombre")
+	private String nombre;
+	// apellidos (atributo) --> apellidos (columna en la tabla estudiante)
+	@Column(name="apellidos")
+	private String apellidos;
+	// edad (atributo) --> edad (columna en la tabla estudiante)
+	@Column(name="edad")
+	private int edad ;
 	
-	public String toString () {
-	return "Estudiante [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" +
-				edad + "]";
+	//Contructor por defecto
+	public Estudiante() {}
+	
+	//Contructor con los campos (id no incluida porque es autoincrementada)
+	public Estudiante(String nombre, String apellidos, int edad) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
+	}
+
+	@Override
+	public String toString() {
+		return "Estudiante [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + "]";
 	}
 
 	public String getNombre() {
@@ -87,6 +74,4 @@ public Estudiante(String nombre, String apellidos, int edad) {
 	public int getId() {
 		return id;
 	}
-
 }
-
