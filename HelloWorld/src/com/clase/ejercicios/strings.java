@@ -1,5 +1,5 @@
 package com.clase.ejercicios;
-//Ejercicios p�gina 413
+//Ejercicios pagina 413
 
 public class strings {
 
@@ -8,7 +8,7 @@ public class strings {
 //Ejercicio 1: Escribe un programa que dado dos String compruebe si los dos primeros dos caracteres son iguales
 		
 		String texto1 = "Hola";
-		String texto2 = "Adi�s";
+		String texto2 = "Adios";
 		
 		String substringABC = "klkabcklk";
 		
