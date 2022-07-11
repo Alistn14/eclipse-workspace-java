@@ -1,24 +1,50 @@
 package com.fullstack.dependencia.constructor;
-
 public class ProfesorMates implements Profesor{
 
+	 private ExperienciaServicio experienciaServicio;
+	 
 	@Override
 	public String getClases() {
-		// TODO Auto-generated method stub
+		
 		return "Clases de Mates";
 	}
 	
-    private ExperienciaServicio experienciaServicio;
-	
-    //Constructor con el servicio inyectado
-	public ProfesorMates(ExperienciaServicio experienciaServicio) {
-		this.experienciaServicio=experienciaServicio;
 		
-	}
-
 	@Override
 	public int getExperiencia() {
 		return experienciaServicio.getExperiencia();
+	}
+	
+	 //Constructor con el servicio inyectado
+		public ProfesorMates(ExperienciaServicio experienciaServicio) {
+			this.experienciaServicio=experienciaServicio; 
+		}
+	
+	
+	//Atributos
+  	protected String examen;
+  	protected int notaExamen;
+	
+    //Métodos GET and SET
+	
+	@Override
+	public String getExamen() {
+		return examen;
+	}
+
+	@Override
+	public void setExamen(String examen) {
+		this.examen=examen;
+	}
+
+	@Override
+	public int getNotaExamen() {
+		return notaExamen;
+	}
+
+	@Override
+	public void setNotaExamen(int notaExamen) {
+		this.notaExamen=notaExamen;
 	}
 
 }

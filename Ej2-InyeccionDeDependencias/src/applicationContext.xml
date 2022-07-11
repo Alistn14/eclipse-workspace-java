@@ -26,4 +26,11 @@
  <property name="experienciaServicio" ref="miExperienciaServicio"></property>
  
  </bean>
+ 
+ <bean id="miProfesorMates" class="com.fullstack.dependencia.constructor.ProfesorMates">
+ 
+ <property name="examen" value="La nota del examen es:"/>
+ <property name="notaExamen" value="8"/>
+ 
+ </bean> 
 </beans>

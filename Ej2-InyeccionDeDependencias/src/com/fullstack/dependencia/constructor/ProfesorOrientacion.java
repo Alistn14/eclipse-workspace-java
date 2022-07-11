@@ -6,11 +6,10 @@ public class ProfesorOrientacion implements Profesor{
 
 	@Override
 	public String getClases() {
-		// TODO Auto-generated method stub
-		return "Clases de Orientación";
+		return "Sesiones de orientación";
 	}
 
-	
+
 	@Override
 	public int getExperiencia() {
 		return experienciaServicio.getExperiencia();
@@ -20,5 +19,33 @@ public class ProfesorOrientacion implements Profesor{
 		public void setExperienciaServicio(ExperienciaServicio experienciaServicio) {
 			this.experienciaServicio = experienciaServicio;
 		}
+
+		//Atributos
+	  	protected String examen;
+	  	protected int notaExamen;
+		
+	    //Métodos GET and SET
+		
+		@Override
+		public String getExamen() {
+			return examen;
+		}
+
+		@Override
+		public void setExamen(String examen) {
+			this.examen=examen;
+		}
+
+		@Override
+		public int getNotaExamen() {
+			return notaExamen;
+		}
+
+		@Override
+		public void setNotaExamen(int notaExamen) {
+			this.notaExamen=notaExamen;
+		}
+
+		
 
 }

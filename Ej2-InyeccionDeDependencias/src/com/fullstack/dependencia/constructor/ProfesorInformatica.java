@@ -3,7 +3,7 @@ package com.fullstack.dependencia.constructor;
 public class ProfesorInformatica implements Profesor {
 
 	private ExperienciaServicio experienciaServicio;
-	
+
 	@Override
 	public String getClases() {
 		return "Clases de Informática";
@@ -21,10 +21,32 @@ public class ProfesorInformatica implements Profesor {
   		this.experienciaServicio=experienciaServicio;
   		
   	}
-	
-	
 
+  //Atributos
+  	protected String examen;
+  	protected int notaExamen;
 	
+    //Métodos GET and SET
+	
+	@Override
+	public String getExamen() {
+		return examen;
+	}
+
+	@Override
+	public void setExamen(String examen) {
+		this.examen=examen;
+	}
+
+	@Override
+	public int getNotaExamen() {
+		return notaExamen;
+	}
+
+	@Override
+	public void setNotaExamen(int notaExamen) {
+		this.notaExamen=notaExamen;
+	}
 
 	
 }

@@ -14,12 +14,17 @@ public class MainProfesores {
 
 		Profesor Marc = contexto.getBean("miProfesorInformatica", Profesor.class);
 		Profesor Paola=contexto.getBean("miProfesorOrientacion", Profesor.class);
+		Profesor Carlos=contexto.getBean("miProfesorMates", Profesor.class);
 		
 		System.out.println(Marc.getClases());
 		System.out.println(Marc.getExperiencia());
 		
+	
 		System.out.println(Paola.getClases());
 		System.out.println(Paola.getExperiencia());
+		
+		System.out.println(Carlos.getExamen());
+		System.out.println(Carlos.getNotaExamen());
 		
 		
 		//Cerrar contexto
