@@ -11,15 +11,16 @@
     	http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
  
- 
+<context:property-placeholder location="classpath:datos.properties"/>
+
  <bean id="miExperienciaServicio" class="com.fullstack.dependencia.constructor.PocaExperienciaServicio"></bean> 
- 
+
  <bean id= "miProfesorInformatica" class="com.fullstack.dependencia.constructor.ProfesorInformatica">      
- 
+ <property name="examen" value="${examen}"></property>
 <constructor-arg ref="miExperienciaServicio"></constructor-arg>
- 
 
  </bean>
+ 
  
  <bean id= "miProfesorOrientacion" class="com.fullstack.dependencia.constructor.ProfesorOrientacion">
  
@@ -29,8 +30,11 @@
  
  <bean id="miProfesorMates" class="com.fullstack.dependencia.constructor.ProfesorMates">
  
- <property name="examen" value="La nota del examen es:"/>
- <property name="notaExamen" value="8"/>
+ <constructor-arg ref="miExperienciaServicio"></constructor-arg>
  
- </bean> 
+ <property name="examen" value="La nota del examen es: notable"/>
+ 
+ </bean>
+  
+  
 </beans>

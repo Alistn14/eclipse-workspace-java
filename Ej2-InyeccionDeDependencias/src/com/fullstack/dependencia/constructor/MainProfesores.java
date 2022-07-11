@@ -24,7 +24,6 @@ public class MainProfesores {
 		System.out.println(Paola.getExperiencia());
 		
 		System.out.println(Carlos.getExamen());
-		System.out.println(Carlos.getNotaExamen());
 		
 		
 		//Cerrar contexto

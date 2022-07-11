@@ -24,8 +24,7 @@ public class ProfesorInformatica implements Profesor {
 
   //Atributos
   	protected String examen;
-  	protected int notaExamen;
-	
+  	
     //Métodos GET and SET
 	
 	@Override
@@ -36,16 +35,6 @@ public class ProfesorInformatica implements Profesor {
 	@Override
 	public void setExamen(String examen) {
 		this.examen=examen;
-	}
-
-	@Override
-	public int getNotaExamen() {
-		return notaExamen;
-	}
-
-	@Override
-	public void setNotaExamen(int notaExamen) {
-		this.notaExamen=notaExamen;
 	}
 
 	

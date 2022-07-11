@@ -22,7 +22,7 @@ public class ProfesorOrientacion implements Profesor{
 
 		//Atributos
 	  	protected String examen;
-	  	protected int notaExamen;
+	  	protected String notaExamen;
 		
 	    //Métodos GET and SET
 		
@@ -36,16 +36,6 @@ public class ProfesorOrientacion implements Profesor{
 			this.examen=examen;
 		}
 
-		@Override
-		public int getNotaExamen() {
-			return notaExamen;
-		}
 
-		@Override
-		public void setNotaExamen(int notaExamen) {
-			this.notaExamen=notaExamen;
-		}
-
-		
 
 }
