@@ -28,7 +28,9 @@
  
  </bean>
  
- <bean id="miProfesorMates" class="com.fullstack.dependencia.constructor.ProfesorMates">
+ <!-- Añadidos métodos destroy and init (ejercicio 4) -->
+ 
+ <bean id="miProfesorMates"  class="com.fullstack.dependencia.constructor.ProfesorMates">
  
  <constructor-arg ref="miExperienciaServicio"></constructor-arg>
  

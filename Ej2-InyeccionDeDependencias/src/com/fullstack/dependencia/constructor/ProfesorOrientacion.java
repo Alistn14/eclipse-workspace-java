@@ -1,5 +1,6 @@
 package com.fullstack.dependencia.constructor;
 
+
 public class ProfesorOrientacion implements Profesor{
 
 	  private ExperienciaServicio experienciaServicio;
@@ -35,7 +36,5 @@ public class ProfesorOrientacion implements Profesor{
 		public void setExamen(String examen) {
 			this.examen=examen;
 		}
-
-
 
 }

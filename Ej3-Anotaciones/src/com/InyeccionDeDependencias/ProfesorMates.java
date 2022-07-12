@@ -1,7 +1,19 @@
 package com.InyeccionDeDependencias;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProfesorMates implements Profesor{
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("Inicialización");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Destrucción");
+	}
 
 	@Override
 	public String getClases() {

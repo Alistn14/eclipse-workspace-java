@@ -1,7 +1,7 @@
 package com.fullstack.dependencia.constructor;
 
 public interface Profesor {
-
+	
 //Métodos GET y SET
 	
 	public String getExamen();

@@ -1,19 +1,25 @@
 package com.InyeccionDeDependencias;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 //Ejercicio 3 mediante comentarios, explicación de las anotaciones:
 
 //Etiqueta configuration para crear la nueva clase configuración y definirla
 
 @Configuration
+@ComponentScan("com.InyeccionDeDependencias")
 @PropertySource("classpath:datos.properties")
 
-//Etiqueta ComponentScan es opcional pero lo uso para escanear los beans definidos en las clases.
-
-@ComponentScan("com.InyeccionDeDependencias")
 
 public class Configuracion {
 
